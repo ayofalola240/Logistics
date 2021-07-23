@@ -26,12 +26,12 @@ const accountSchema = new mongoose.Schema({
         lowercase: true,
         validate: [validator.isEmail, 'Please provide a valid email']
     },
-    phone: {
-        type: String,
-        trim: true,
-        unique: true,
-        validate: [validator.isMobilePhone(['en-NG']), 'Please provide a valid phone number']
-    },
+    // phone: {
+    //     type: String,
+    //     trim: true,
+    //     unique: true,
+    //     validate: [validator.isMobilePhone('en-NG'), 'Please provide a valid phone number']
+    // },
 
     role: {
         type: String,
